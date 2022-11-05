@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minesweeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Minesweeper</h1>
+      </div>
+      <div class="game">
+        <div class="buttons"></div>
+        <div class="flags">
+          <button class="flag-cursor" onclick="toggleCursor()">🚩</button>
+          <div class="flagged-count">0</div>
+          /
+          <div class="mine-count">0</div>
+        </div>
+        <div class="board"></div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
